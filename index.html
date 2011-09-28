@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>pKa Quiz</title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" 
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="handlebars.1.0.0.beta.3.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <h1>Which is more (Brønsted-Lowry) acidic?</h1>
+        <a id="c1" href="#">
+        </a>
+
+        <a id="c2" href="#">
+        </a>
+
+        <script id="compound_template" type="text/x-handlebars-template">
+            <h2>{{name}}</h2>
+            <h3>{{{formula}}}</h3>
+            <h4>{{pka}}</h4>
+        </script>
+
+        <div id="message">
+        </div>
+
+        <div id="tips">
+            <h2>Tips</h2>
+            <p>Acid = proton donor, Base = proton acceptor</p>
+            <p>Water has a pKa of <strong>15.7</strong></p>
+            <p>More s character = more acidic</p>
+        </div>
+
+        <footer>
+            Made by <a href="http://www.tooepic.com">Ethan Sherbondy</a> for 
+            <a href="http://stellar.mit.edu/S/course/5/fa11/5.12/index.html">5.12</a>.
+        </footer>
+    </body>
+</html>
